@@ -1,5 +1,5 @@
 首先非常感谢所有我遇到的人, 没有你们就没有现在的我, 我会继续向上的, 大家共同进步。
-    感觉@iamtang: https://github.com/iamtang/Front-end-Interview-questions
+    <br/>感谢@iamtang: https://github.com/iamtang/Front-end-Interview-questions
 # Front-end-interview-questions
 
 > 简介: 根据本人自己的面试经历, 总结的一套算是全面的面试题及答案。有什么不对的地方请多批评指教, 谢~。
