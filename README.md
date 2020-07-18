@@ -1,4 +1,5 @@
 首先非常感谢所有我遇到的人, 没有你们就没有现在的我, 我会继续向上的, 大家共同进步。
+    感觉@iamtang: https://github.com/iamtang/Front-end-Interview-questions
 # Front-end-interview-questions
 
 > 简介: 根据本人自己的面试经历, 总结的一套算是全面的面试题及答案。有什么不对的地方请多批评指教, 谢~。
@@ -583,6 +584,13 @@
     如果让你做一个登录模块, 前端应该怎么做？你觉得后端应该怎么做？简述一下过程。
     说一下浏览器的协议？
         1. 地址栏输入url, 一系列的过程
+            1. 输入网址。
+            2. 发送到DNS服务器, 并获取域名对应的web服务器对应的ip地址。
+            3. 与web服务器建立TCP连接。
+            4. 浏览器向web服务器发送http请求。
+            5. web服务器响应请求, 并返回指定url的数据(或错误信息, 或重定向的新的url地址)。
+            6. 浏览器下载web服务器返回的数据及解析html源文件。
+            7. 生成DOM树, 解析css和js, 渲染页面, 直至限时完成。
         2. 200, 404, 500等代表啥
         3. http, https有啥区别
     WebSocket？
@@ -635,5 +643,30 @@
         redis用于存储使用较为频繁的数据到缓存中, 读取速度快。
     3.需求上
         mysql和redis因为需求的不同, 一般都是配合使用。
+
+```
+## 其他
+```
+1. 公用的css样式(淘宝初始化样式), 最简单原始的方法是 * {padding: 0; margin: 0;} (不建议)
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+    body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+    h1, h2, h3, h4, h5, h6{ font-size:100%; }
+    address, cite, dfn, em, var { font-style:normal; }
+    code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+    small{ font-size:12px; }
+    ul, ol { list-style:none; }
+    a { text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    sup { vertical-align:text-top; }
+    sub{ vertical-align:text-bottom; }
+    legend { color:#000; }
+    fieldset, img { border:0; }
+    button, input, select, textarea { font-size:100%; }
+    table { border-collapse:collapse; border-spacing:0; } 
+2. jq import file:
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
 
 ```
